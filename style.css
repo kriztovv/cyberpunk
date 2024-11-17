@@ -1,0 +1,168 @@
+/* styles.css */
+body {
+  margin: 0;
+  background: #0f0f0f;
+  font-family: "Arial", sans-serif;
+  color: #e5f509;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: #e5f509;
+  position: fixed;
+  display: flex;
+  z-index: 100;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+.screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.title {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.logo {
+  width: 33%;
+  object-fit: contain;
+  justify-content: center;
+  margin-left: 33%;
+}
+a {
+  font-size: 50px;
+  color: #0f0f0f;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 75px;
+  margin-left: 150px;
+}
+ul {
+  margin-left: 0;
+  font-size: 50px;
+}
+li {
+  margin-top: 30px;
+}
+.split-container {
+  position: relative;
+  width: 70vw;
+  height: 70vh;
+  overflow: hidden;
+  margin-left: 15vw;
+  border-radius: 50px;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-a {
+  background-image: url("images/adam\ smasher\ game.jpg"); /* Replace with your first image */
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+}
+
+.image-b {
+  background-image: url("images/adam\ smasher\ anime.jpg"); /* Replace with your second image */
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.trail {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background: linear-gradient(to bottom, red, blue);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fade 1s forwards, color-shift 1s linear;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes color-shift {
+  0% {
+    background: orange;
+  }
+  25% {
+    background: red;
+  }
+  50% {
+    background: blue;
+  }
+  100% {
+    background: green;
+  }
+}
+.img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 75px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(111, 111, 111);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+h2 {
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+  font-size: 50px;
+  color: #0f0f0f;
+}
+.card {
+  margin-top: 100px;
+  background-color: #e5f509;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  padding-top: 0;
+  border-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.p {
+  color: #0f0f0f;
+}
